@@ -1,5 +1,13 @@
 ---
 import '../styles/global.css'
+const textLinks: { label: string; href: string }[] = [
+  { label: "Inicio", href: "/" },
+  { label: "Informacion del evento", href: "/infoEvent/" },
+  { label: "Agenda", href: "/agenda/" },
+  { label: "Ponentes", href: "/ponentes/" },
+  { label: "Inscripcion", href: "/inscripcion/" },
+  { label: "Patrocinadores", href: "/patrocinadores /" },
+];
 ---
 <header class="menu ">
   <div
@@ -13,37 +21,37 @@ import '../styles/global.css'
       <nav aria-label="Global" class="hidden md:block">
         <ul class="flex items-center gap-6 text-sm">
           <li>
-            <a class=" transition hover:text-gray-500/75" href="#">
+            <a class=" transition hover:text-gray-500/75" href="/">
               Inicio
             </a>
           </li>
 
           <li>
-            <a class=" transition hover:text-gray-500/75" href="#">
+            <a class=" transition hover:text-gray-500/75" href="infoEvent">
               Informacion del evento
             </a>
           </li>
 
           <li>
-            <a class=" transition hover:text-gray-500/75" href="#">
+            <a class=" transition hover:text-gray-500/75" href="agenda">
               Agenda
             </a>
           </li>
 
           <li>
-            <a class=" transition hover:text-gray-500/75" href="#">
+            <a class=" transition hover:text-gray-500/75" href="ponentes">
               Ponentes
             </a>
           </li>
 
           <li>
-            <a class=" transition hover:text-gray-500/75" href="#">
+            <a class=" transition hover:text-gray-500/75" href="inscripcion">
               Inscripción
             </a>
           </li>
 
           <li>
-            <a class=" transition hover:text-gray-500/75" href="#">
+            <a class=" transition hover:text-gray-500/75" href="patrocinadores">
               Patrocinadores
             </a>
           </li>
