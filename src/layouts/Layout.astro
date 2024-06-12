@@ -3,6 +3,7 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import '../styles/global.css';
 import '../styles/normalizacion.css';
+import { ViewTransitions } from 'astro:transitions';
 interface Props {
 	title: string;
 }
@@ -11,7 +12,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" transition:animate="initial" >
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
@@ -19,6 +20,7 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<Nav/>
